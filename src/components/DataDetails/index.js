@@ -8,7 +8,7 @@ const DataDetails = (character) => {
   const [ marvelCharacters, setMarvelCharacters ] = useState();
 
   const getMarvelCharacters = async () => {
-    const response = await axios.get('http://gateway.marvel.com/v1/public/characters', { 
+    const response = await axios.get('https://gateway.marvel.com/v1/public/characters', { 
       params: { 
         apikey: process.env.REACT_APP_API_KEY,
         limit: 50,

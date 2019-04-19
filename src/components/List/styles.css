@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0 20px;
+  padding: 10px;
+}
+
+.list:last-child {
+  border: 0;
+}
+
+.list img {
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.content h1 {
+  margin: 0;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color-primary);
+  padding: 0 20px;
+}
+
+.content p {
+  margin: 0;
+  padding: 0 20px;
+  font-style: italic;
+}

@@ -31,7 +31,7 @@ const DataDetails = (character) => {
         key={char.id}
         name={char.name}
         description={char.description ? char.description : 'No description'}
-        image={`${char.thumbnail.path}.${char.thumbnail.extension}`} 
+        image={`${char.thumbnail.path}/standard_fantastic.${char.thumbnail.extension}`} 
       />
     )) : null }
   </div>

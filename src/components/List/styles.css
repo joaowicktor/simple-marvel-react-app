@@ -25,7 +25,7 @@
   margin: 0;
   display: flex;
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   color: var(--color-primary);
   padding: 0 20px;

@@ -23,7 +23,7 @@ const DataDetails = () => {
   useEffect(() => {
     const query = document.location.search.substring(1);
     const [ prefix, search ] = query.split('=');
-    
+
     if (prefix === 'character') {
       const decodedSearch = decodeURI(search);
       getMarvelCharacters(decodedSearch);
@@ -33,7 +33,7 @@ const DataDetails = () => {
   }, []);
 
   return (
-    <div className="box">
+    <div className="panel">
     <div className="top-bar"><h1>Search Results</h1></div>
     { marvelCharacters ? marvelCharacters.map(char => (
       <List 

@@ -16,7 +16,7 @@ export default class CharacterDetails extends Component {
           <ThemeSwitcher />
         </header>
         <DataDetails />
-        <footer>Data provided by Marvel. © 2014 Marvel</footer>
+        <footer>Developed with ❤ by <a href="https://github.com/joaowicktor">João Wicktor</a><br/>Data provided by Marvel. © 2014 Marvel</footer>
       </div>
     );
   }

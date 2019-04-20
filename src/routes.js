@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Main from './pages/Main';
 import CharacterDetails from './pages/CharacterDetails';
+import NotFound from './pages/NotFound';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={ Main } />
       <Route path="/details" component={ CharacterDetails } />
+      <Route component={ NotFound } />
     </Switch>
   </BrowserRouter>
 );

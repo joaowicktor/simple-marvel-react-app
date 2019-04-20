@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.css';
 
-import MarvelForm from '../../components/Form';
-import ToggleButton from '../../components/ToggleButton';
+import ThemeSwitcher from '../../components/ThemeSwitcher';
+import Form from '../../components/Form';
 
 const Main = () => (
   <>
-    <div id="toggleBtn"><ToggleButton /></div>
-    <MarvelForm />
+    <div id="toggleBtn"><ThemeSwitcher /></div>
+    <Form />
   </>
 );
 

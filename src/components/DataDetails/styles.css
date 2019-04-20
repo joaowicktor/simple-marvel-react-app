@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--defaultRed);
+  background-color: var(--red);
   border-radius: 20px 20px 0 0;
   color: #ffffff;
   padding: 10px;

@@ -1,3 +1,18 @@
+:root {
+  --bg: #eef4f7;
+  --bg-panel: #ffffff;
+  --color-primary: #333333;
+  --text-color: #333333;
+  --red: #e40008;
+}
+
+html[data-theme='dark'] {
+  --bg: #181e24;
+  --bg-panel: #1F2831;
+  --color-primary: #ffffff;
+  --text-color: #949ea7;
+}
+
 #toggle div {
   display: flex;
   justify-content: center;
@@ -35,7 +50,7 @@ label:after {
 }
 
 input:checked + label {
-	background: #e40008;
+	background: var(--red);
 }
 
 input:checked + label:after {

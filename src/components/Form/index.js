@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 
 import './styles.css';
 
-const MarvelForm = () => {
+const Form = () => {
   const [ searchText, setSearchText ] = useState('');
   const [ submitted, setSubmitted ] = useState(false);
 
@@ -21,10 +21,10 @@ const MarvelForm = () => {
         <img className="logo" src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo.png" alt="" />
         <input id="searchInput" type="text" placeholder="Type a character name" onChange={e => setSearchText(e.target.value)} />
         <button className="submitButton" onClick={() => setSubmitted(true)}>Search</button>
-        { submitted ? <Redirect to={{ pathname:"/details", state: { character: searchText } }} /> : null }
+        { submitted ? <Redirect to={`/details?character=${searchText}`} /> : null }
       </form>
     </div>
   )
 };
 
-export default MarvelForm;
+export default Form;

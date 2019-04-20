@@ -4,7 +4,7 @@ import './styles.css';
 import { IconContext } from "react-icons";
 import { FaAdjust } from 'react-icons/fa';
 
-const ToggleButton = () => {
+const ThemeSwitcher = () => {
   const [ defaultTheme, setDefaultTheme ] = useState('light');
   const [ iconTheme, setIconTheme ] = useState('#333333');
 
@@ -45,4 +45,4 @@ const ToggleButton = () => {
   )
 };
 
-export default ToggleButton;
+export default ThemeSwitcher;

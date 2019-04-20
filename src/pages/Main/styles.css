@@ -11,22 +11,6 @@ body,
   height: 100%;
 }
 
-html {
-  --hue: 210;
-  --bg: #eef4f7;
-  --bg-panel: #ffffff;
-  --text-color-primary: #333333;
-  --text-color: #333333;
-  --defaultRed: #e40008;
-}
-
-html[data-theme='dark'] {
-  --bg: hsl(var(--hue), 20%, 12%);
-  --bg-panel: #1F2831;
-  --text-color-primary: #ffffff;
-  --text-color: hsl(var(--hue), 10%, 62%);
-}
-
 body {
   font-family: 'Montserrat';
   font-size: 14px;

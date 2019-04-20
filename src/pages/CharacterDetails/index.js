@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
-import Navbar from '../../components/Navbar'
+import ThemeSwitcher from '../../components/ThemeSwitcher'
 import DataDetails from '../../components/DataDetails'
 
 export default class CharacterDetails extends Component {
   render() {
     return (
       <div className="details">
-        <Navbar />
-        <DataDetails character={ this.props.location.state.character } />
+        <header className="header">
+          <Link to={'/'}>
+            <img className="logo" src="https://logodownload.org/wp-content/uploads/2017/05/marvel-logo.png" alt="" />
+          </Link>
+          <ThemeSwitcher />
+        </header>
+        <DataDetails />
+        <footer>Data provided by Marvel. © 2014 Marvel</footer>
       </div>
     );
   }

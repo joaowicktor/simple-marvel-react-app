@@ -10,7 +10,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={ Main } />
       <Route path="/details" component={ CharacterDetails } />
-      <Route path='*' component={ NotFound } />
+      <Route path='/not-found' component={ NotFound } />
     </Switch>
   </BrowserRouter>
 );

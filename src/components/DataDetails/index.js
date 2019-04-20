@@ -3,8 +3,9 @@ import axios from 'axios';
 import './styles.css';
 
 import List from '../List';
+import LoadingSpinner from '../LoadingSpinner';
 
-const DataDetails = (character) => {
+const DataDetails = ({ character }) => {
   const [ marvelCharacters, setMarvelCharacters ] = useState();
 
   const getMarvelCharacters = async () => {
@@ -12,7 +13,7 @@ const DataDetails = (character) => {
       params: { 
         apikey: process.env.REACT_APP_API_KEY,
         limit: 50,
-        nameStartsWith: character.character
+        nameStartsWith: character
       }
     });
     const data = response.data.data.results;
@@ -33,7 +34,7 @@ const DataDetails = (character) => {
         description={char.description ? char.description : 'No description'}
         image={`${char.thumbnail.path}/standard_fantastic.${char.thumbnail.extension}`} 
       />
-    )) : null }
+    )) : <LoadingSpinner /> }
   </div>
   );
 };

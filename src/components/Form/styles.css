@@ -1,6 +1,8 @@
 :root {
   --btn-color: #e40008;
+  --btn-color-disabled: #ec686d;
   --btn-text-color: #ffffff;
+  --btn-text-color-disabled: #e6e6e6;
   --input-text-color: #333333;
   --input-border-color: #dddddd;
 }
@@ -45,4 +47,9 @@
   font-size: 12px;
   text-align: center;
   text-decoration: none;
+}
+
+.main-container .submitButton:disabled {
+  background-color: var(--btn-color-disabled);
+  color: var(--btn-text-color-disabled);
 }

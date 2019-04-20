@@ -6,7 +6,7 @@ import List from '../List';
 import LoadingSpinner from '../LoadingSpinner';
 
 const DataDetails = ({ character }) => {
-  const [ marvelCharacters, setMarvelCharacters ] = useState();
+  const [ marvelCharacters, setMarvelCharacters ] = useState([]);
 
   const getMarvelCharacters = async () => {
     const response = await axios.get('https://gateway.marvel.com/v1/public/characters', { 
@@ -16,8 +16,8 @@ const DataDetails = ({ character }) => {
         nameStartsWith: character
       }
     });
-    const data = response.data.data.results;
-    setMarvelCharacters(data);
+    const characters = response.data.data.results;
+    setMarvelCharacters(characters); 
   }
   
   useEffect(() => {

@@ -9,7 +9,7 @@ export default class CharacterDetails extends Component {
     return (
       <div className="details">
         <Navbar />
-        <DataDetails character={ this.props.location.state.character }/>
+        <DataDetails character={ this.props.location.state.character } />
       </div>
     );
   }
